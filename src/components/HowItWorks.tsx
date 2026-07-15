@@ -15,10 +15,12 @@ export function HowItWorks() {
           {copy.howItWorks.steps.map((step, i) => (
             <li
               key={step.step}
-              className="bl-fade-up relative text-center sm:text-left"
+              className="bl-fade-up relative text-center"
               style={{ animationDelay: `${i * 90}ms` }}
             >
-              <p className="font-heading text-4xl font-semibold text-bl-sage/45">{step.step}</p>
+              <p className="font-heading text-4xl font-semibold text-[#88B2A9]">
+                {step.step}
+              </p>
               <h3 className="mt-2 text-xl">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-bl-slate">{step.description}</p>
             </li>
