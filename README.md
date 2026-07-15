@@ -1,90 +1,92 @@
-# Badlands TMS — Landing Page
+# Badlands TMS
 
-Inquiry landing page for [Badlands TMS](https://www.badlandstms.com/) in Bend, OR. Built with Next.js 14, TypeScript, and Tailwind CSS using the client's sage / charcoal brand palette.
+Marketing landing page for [Badlands TMS](https://www.badlandstms.com/), a TMS therapy clinic in Bend, Oregon. Built with Next.js to support consultation inquiries, clinic information, and brand-aligned presentation.
 
-## Quick Start
+## Features
+
+- Responsive landing page with sticky navigation and mobile call-to-action
+- Clinic overview: care approach, provider profile, TMS education, benefits, and FAQ
+- Insurance carrier logos and financing information
+- Consultation inquiry form
+- Brand styling with sage / charcoal palette and custom typography
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) (App Router)
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/) (icons)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or later
+- npm
+
+### Installation
 
 ```bash
-cd ~/Projects/badlands-tms
+git clone https://github.com/farahzahirdev/badlands-tms.git
+cd badlands-tms
 npm install
+```
+
+### Development
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Logo Placement
+### Production
 
-Place the client logo at:
-
+```bash
+npm run build
+npm start
 ```
-public/images/logo.png
-```
-
-The header, footer, and favicon all reference this file. Transparent PNG recommended (current file is the attached BadlandsHorizontal asset).
-
-## Brand
-
-| Token | Hex | Use |
-|-------|-----|-----|
-| Sage | `#88B2A9` | Accent, CTAs, icon |
-| Charcoal | `#272A2B` | Headings, body text |
-| White / Mist | `#FFFFFF` / `#F5F8F7` | Backgrounds |
-
-Typography: **Outfit** (headings) + **Source Sans 3** (body).
-
-## Project Structure
-
-| Path | Purpose |
-|------|---------|
-| `src/app/` | Next.js App Router layout & page |
-| `src/components/` | Header, Hero, sections, form, footer |
-| `src/content/copy.ts` | All page copy |
-| `src/content/site.ts` | Phone, address, links |
-| `public/images/` | Logo and photography (see below) |
-
-## Images
-
-Photos and insurance logos pulled from [badlandstms.com](https://www.badlandstms.com/) (not stock).
-
-| File | Source / use |
-|------|----------------|
-| `logo.png` | Client logo |
-| `hero.jpg` | Site landscape (`look-at-view.jpg`) — hero |
-| `river.jpg` | Site river photo — approach section |
-| `nature.jpg` / `clinic.jpg` | Site trail photo — TMS / supporting |
-| `dr-brown.jpeg` | Dr. Chad Brown headshot from team page |
-| `chewy.jpg` / `millie.jpg` | Therapy dogs from team page |
-| `insurance/*.png` | Carrier logos from client site |
-
-## CTAs
-
-- **Primary (header / mobile float):** Call `(541) 323-8705`
-- **Secondary (hero & contact):** Consultation inquiry form
-
-The form currently opens a prefilled `mailto:` to `admin@badlandstms.com`. Swap `InquiryForm` for a GoHighLevel embed when the form ID is available.
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Development server |
-| `npm run build` | Production build |
-| `npm start` | Serve production build |
+| Command         | Description              |
+|-----------------|--------------------------|
+| `npm run dev`   | Start development server |
+| `npm run build` | Create production build  |
+| `npm start`     | Serve production build   |
+| `npm run lint`  | Run ESLint               |
 
-## Sections (CIP-style layout)
+## Project Structure
 
-1. Sticky header — Call + Request Consultation  
-2. Full-bleed hero (**no form**) — brand, headline, CTAs, trust chips  
-3. Insurance logo strip (from client site)  
-4. “If this sounds familiar” approach section  
-5. Dr. Chad Brown, M.D. + stats  
-6. Therapy dogs (Chewy & Millie)  
-7. How it works (3 steps)  
-8. What is TMS  
-9. Benefits  
-10. Conditions  
-11. Insurance & financing  
-12. FAQ  
-13. Contact form (end of page) + footer  
+```
+badlands-tms/
+├── public/images/       # Brand assets, photography, insurance logos
+├── src/
+│   ├── app/             # App Router layout and entry page
+│   ├── components/      # UI sections and shared components
+│   └── content/         # Site copy and clinic contact details
+├── package.json
+└── tailwind.config.ts
+```
 
-Messaging and photos adapted from [badlandstms.com](https://www.badlandstms.com/). Layout inspired by [texascip.vercel.app](https://texascip.vercel.app/).
+## Content & Configuration
+
+Clinic details (phone, address, hours, links) live in `src/content/site.ts`.  
+Page copy lives in `src/content/copy.ts`.
+
+Update these files to change messaging or contact information without editing component markup.
+
+## Brand
+
+| Token    | Hex       | Usage                    |
+|----------|-----------|--------------------------|
+| Sage     | `#6F978E` | Accents, CTAs, highlights |
+| Charcoal | `#272A2B` | Headings and body text   |
+| Mist     | `#F5F8F7` | Section backgrounds      |
+
+Typography: **Outfit** (headings) and **Source Sans 3** (body).
+
+## License
+
+Private project. All rights reserved.
