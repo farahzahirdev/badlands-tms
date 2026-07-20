@@ -33,7 +33,7 @@ export function Hero() {
                 />
                 <h1
                   id="hero-heading"
-                  className="!normal-case !text-[clamp(2.1rem,8vw,3.25rem)] !leading-[1.14] !tracking-[-0.03em] !text-white"
+                  className="!normal-case !font-[550] !text-[clamp(2.1rem,8vw,3.25rem)] !leading-[1.14] !tracking-[-0.03em] !text-white"
                   style={{
                     fontFamily:
                       "freight-sans-pro, var(--font-outfit), system-ui, sans-serif",
