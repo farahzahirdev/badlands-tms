@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Outfit, Roboto_Slab, Source_Sans_3 } from "next/font/google";
+import { Outfit, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
-
-const sourceSans = Source_Sans_3({
-  subsets: ["latin"],
-  variable: "--font-source-sans",
   display: "swap",
   weight: ["400", "500", "600", "700"],
 });
@@ -59,9 +52,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/ycc6aem.css" />
       </head>
-      <body
-        className={`${outfit.variable} ${sourceSans.variable} ${robotoSlab.variable} font-body`}
-      >
+      <body className={`${outfit.variable} ${robotoSlab.variable} font-body`}>
         {children}
       </body>
     </html>

@@ -23,9 +23,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-source-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-outfit)", "system-ui", "sans-serif"],
         heading: ["brandon-grotesque", "var(--font-outfit)", "system-ui", "sans-serif"],
-        body: ["freight-sans-pro", "var(--font-source-sans)", "system-ui", "sans-serif"],
+        body: ["freight-sans-pro", "var(--font-outfit)", "system-ui", "sans-serif"],
         slab: ["var(--font-slab)", "var(--font-outfit)", "system-ui", "sans-serif"],
         neusa: ["brandon-grotesque", "var(--font-outfit)", "sans-serif"],
       },

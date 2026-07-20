@@ -23,7 +23,7 @@ export function Hero() {
 
           <div className="bl-hero-inner">
             <div className="mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8">
-              <div className="bl-fade-up mx-auto max-w-[780px] space-y-4 text-center text-white sm:space-y-5 lg:mx-0 lg:space-y-6 lg:text-left">
+              <div className="bl-fade-up mx-auto max-w-[920px] space-y-4 text-center text-white sm:space-y-5 lg:mx-0 lg:space-y-6 lg:text-left">
                 <p className="font-heading text-xl font-semibold tracking-tight text-bl-sage sm:text-2xl">
                   {copy.hero.brand}
                 </p>
@@ -33,15 +33,15 @@ export function Hero() {
                 />
                 <h1
                   id="hero-heading"
-                  className="!text-[clamp(2.1rem,8vw,3.25rem)] !leading-[1.14] !tracking-[-0.03em] !text-white"
+                  className="!normal-case !text-[clamp(2.1rem,8vw,3.25rem)] !leading-[1.14] !tracking-[-0.03em] !text-white"
                   style={{
                     fontFamily:
-                      "freight-sans-pro, var(--font-source-sans), system-ui, sans-serif",
+                      "freight-sans-pro, var(--font-outfit), system-ui, sans-serif",
                   }}
                 >
                   {copy.hero.headline}
                 </h1>
-                <p className="mx-auto mt-1 max-w-[50ch] text-base leading-[1.7] text-white/90 sm:text-lg lg:mx-0 lg:leading-[1.75]">
+                <p className="mx-auto mt-1 max-w-[58ch] text-base leading-[1.7] text-white/90 sm:text-lg lg:mx-0 lg:leading-[1.75]">
                   {copy.hero.subheadline}
                 </p>
 

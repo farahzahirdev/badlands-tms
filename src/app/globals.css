@@ -15,7 +15,7 @@ html {
 @layer base {
   body {
     @apply bg-bl-white text-bl-body text-bl-charcoal antialiased;
-    font-family: freight-sans-pro, var(--font-source-sans), system-ui, sans-serif;
+    font-family: freight-sans-pro, var(--font-outfit), system-ui, sans-serif;
     letter-spacing: 0.01em;
   }
 
