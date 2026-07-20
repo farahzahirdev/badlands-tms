@@ -12,7 +12,7 @@ export const copy = {
   },
   hero: {
     brand: "Badlands TMS",
-    headline: "WHEN MEDICATION HASN'T BEEN ENOUGH, DEEP TMS MAY HELP",
+    headline: "When Medication Hasn't Been Enough, Deep TMS May Help",
     subheadline:
       "You are not alone. Many patients come to Badlands TMS after years of frustration — when antidepressants haven't provided enough relief or side effects have made daily life harder. Our physician-led team offers BrainsWay Deep TMS, an advanced, evidence-based treatment in Bend, Oregon.",
     primaryCta: "Request a Consultation",
