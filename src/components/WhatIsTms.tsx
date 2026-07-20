@@ -43,9 +43,9 @@ export function WhatIsTms() {
           })}
         </div>
 
-        <div className="mt-12 grid items-start gap-10 lg:mt-14 lg:grid-cols-2 lg:gap-12">
-          <div className="bl-fade-up space-y-5">
-            <div className="rounded-card border border-bl-sage/20 bg-bl-sage-light/40 p-5 sm:p-6">
+        <div className="mt-12 grid gap-6 lg:mt-14 lg:grid-cols-2 lg:items-stretch lg:gap-8">
+          <div className="bl-fade-up h-full">
+            <div className="flex h-full flex-col rounded-card border border-bl-sage/20 bg-bl-sage-light/40 p-5 sm:p-6">
               <h3 className="font-heading text-lg font-semibold text-bl-charcoal">
                 {copy.whatIsTms.brainsway.headline}
               </h3>
@@ -63,25 +63,24 @@ export function WhatIsTms() {
             </div>
           </div>
 
-          <div className="bl-fade-up space-y-3">
-            <div className="overflow-hidden rounded-image border border-bl-charcoal/8 bg-bl-charcoal shadow-card">
-              <div className="relative aspect-video w-full">
-                <iframe
-                  title={site.brainswayVideoTitle}
-                  src={`${site.brainswayVideoEmbedUrl}?rel=0`}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
+          <div className="bl-fade-up flex h-full flex-col">
+            <div className="relative min-h-[240px] flex-1 overflow-hidden rounded-image border border-bl-charcoal/8 bg-bl-charcoal shadow-card">
+              <iframe
+                title={site.brainswayVideoTitle}
+                src={`${site.brainswayVideoEmbedUrl}?rel=0`}
+                className="absolute inset-0 h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
             </div>
-            <p className="text-sm font-medium text-bl-slate">{site.brainswayVideoTitle}</p>
-            <div className="flex justify-center pt-2 lg:justify-start">
-              <Button href="#contact">{copy.whatIsTms.cta}</Button>
-            </div>
+            <p className="mt-3 text-sm font-medium text-bl-slate">{site.brainswayVideoTitle}</p>
           </div>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <Button href="#contact">{copy.whatIsTms.cta}</Button>
         </div>
       </div>
     </section>
