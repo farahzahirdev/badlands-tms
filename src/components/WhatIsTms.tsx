@@ -1,7 +1,16 @@
-import { Check } from "lucide-react";
+import {
+  Activity,
+  ArrowDownToLine,
+  Brain,
+  Check,
+  Pill,
+  type LucideIcon,
+} from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 import { Button } from "./Button";
+
+const topicIcons: LucideIcon[] = [Brain, Activity, Pill, ArrowDownToLine];
 
 export function WhatIsTms() {
   return (
@@ -16,17 +25,22 @@ export function WhatIsTms() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12">
-          {copy.whatIsTms.topics.map((topic, i) => (
-            <article
-              key={topic.title}
-              className="bl-fade-up rounded-card border border-bl-charcoal/8 bg-bl-mist/50 p-5 sm:p-6"
-              style={{ animationDelay: `${i * 60}ms` }}
-            >
-              <div className="mb-3 h-1 w-8 bg-bl-sage" aria-hidden />
-              <h3 className="text-lg text-bl-charcoal">{topic.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-bl-slate">{topic.body}</p>
-            </article>
-          ))}
+          {copy.whatIsTms.topics.map((topic, i) => {
+            const Icon = topicIcons[i] ?? Brain;
+            return (
+              <article
+                key={topic.title}
+                className="bl-fade-up rounded-card border border-bl-charcoal/8 bg-bl-mist/50 p-5 text-center sm:p-6 sm:text-left"
+                style={{ animationDelay: `${i * 60}ms` }}
+              >
+                <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-bl-sage-light text-bl-sage-deep">
+                  <Icon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
+                </span>
+                <h3 className="text-lg text-bl-charcoal">{topic.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-bl-slate">{topic.body}</p>
+              </article>
+            );
+          })}
         </div>
 
         <div className="mt-12 grid items-start gap-10 lg:mt-14 lg:grid-cols-2 lg:gap-12">
