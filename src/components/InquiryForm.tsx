@@ -40,7 +40,7 @@ export function InquiryForm({ id = "inquiry-form", compact = false }: InquiryFor
       return;
     }
 
-    const subject = encodeURIComponent(`TMS Consultation Request — ${fullName}`);
+    const subject = encodeURIComponent(`Deep TMS Inquiry — ${fullName}`);
     const body = encodeURIComponent(
       [
         `Full Name: ${fullName}`,

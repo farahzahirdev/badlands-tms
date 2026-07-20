@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { copy } from "@/content/copy";
 import { Button } from "./Button";
+import { InlineCta } from "./InlineCta";
 
 const logos = [
   "/images/insurance/Aetna.png",
@@ -47,6 +48,12 @@ export function Insurance() {
             <Button href="#contact">{copy.insurance.cta}</Button>
           </div>
         </div>
+
+        <InlineCta
+          prompt={copy.insurance.inlineCta.prompt}
+          cta={copy.insurance.inlineCta.cta}
+          className="mt-8 bg-white"
+        />
       </div>
     </section>
   );

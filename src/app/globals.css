@@ -14,14 +14,28 @@ html {
 
 @layer base {
   body {
-    @apply bg-bl-white font-body text-bl-body text-bl-charcoal antialiased;
+    @apply bg-bl-white text-bl-body text-bl-charcoal antialiased;
+    font-family: freight-sans-pro, var(--font-source-sans), system-ui, sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  p,
+  li {
+    letter-spacing: 0.01em;
   }
 
   h1,
-  h2,
+  h2 {
+    font-family: brandon-grotesque, var(--font-outfit), system-ui, sans-serif;
+    @apply font-semibold uppercase text-bl-charcoal;
+    letter-spacing: 0.06em;
+  }
+
   h3,
   h4 {
-    @apply font-heading font-semibold text-bl-charcoal;
+    font-family: var(--font-slab), var(--font-outfit), system-ui, sans-serif;
+    @apply font-semibold uppercase text-bl-charcoal;
+    letter-spacing: 0.06em;
   }
 
   h1 {
@@ -43,6 +57,7 @@ html {
 
 @layer components {
   .section-eyebrow {
+    font-family: var(--font-slab), var(--font-outfit), system-ui, sans-serif;
     @apply text-bl-h4 font-semibold uppercase tracking-[0.14em] text-bl-sage-deep;
   }
 

@@ -82,9 +82,9 @@ export function Header() {
             </div>
             <a
               href="#contact"
-              className="inline-flex items-center rounded-full bg-bl-charcoal px-4 py-2 text-sm font-semibold text-white transition hover:bg-bl-charcoal-soft"
+              className="inline-flex items-center rounded-full bg-bl-sage px-4 py-2 text-sm font-semibold text-white transition hover:bg-bl-sage-dark"
             >
-              {copy.header.consultCta}
+              {copy.header.inquiryCta}
             </a>
             <a
               href={site.phoneHref}
@@ -100,13 +100,13 @@ export function Header() {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-bl-charcoal shadow-[0_8px_24px_-16px_rgba(0,0,0,0.35)] lg:hidden"
-            onClick={() => setOpen(true)}
+            className="relative z-[80] inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-bl-charcoal shadow-[0_8px_24px_-16px_rgba(0,0,0,0.35)] lg:hidden"
+            onClick={() => setOpen((prev) => !prev)}
             aria-expanded={open}
             aria-controls="mobile-nav"
-            aria-label="Open menu"
+            aria-label={open ? "Close menu" : "Open menu"}
           >
-            <Menu className="h-5 w-5" />
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </nav>
 
@@ -115,16 +115,8 @@ export function Header() {
             id="mobile-nav"
             className="absolute left-[clamp(1.1rem,3.5vw,2.5rem)] right-[clamp(1.1rem,3.5vw,2.5rem)] top-full z-[70] mt-2 flex flex-col gap-[0.9rem] rounded-3xl border border-[rgba(39,42,43,0.1)] bg-white px-[1.3rem] py-[1.1rem] shadow-[0_20px_50px_-30px_rgba(0,0,0,0.4)] lg:hidden"
           >
-            <div className="mb-1 flex items-center justify-between">
+            <div className="mb-1">
               <span className="text-sm font-semibold text-bl-charcoal">Menu</span>
-              <button
-                type="button"
-                onClick={close}
-                className="rounded-full p-2 hover:bg-bl-sage-light"
-                aria-label="Close menu"
-              >
-                <X className="h-5 w-5" />
-              </button>
             </div>
             {navLinks.map((link) => (
               <a
@@ -139,9 +131,9 @@ export function Header() {
             <a
               href="#contact"
               onClick={close}
-              className="mt-1 inline-flex items-center justify-center rounded-full bg-bl-charcoal px-5 py-3 text-sm font-semibold text-white"
+              className="mt-1 inline-flex items-center justify-center rounded-full bg-bl-sage px-5 py-3 text-sm font-semibold text-white"
             >
-              {copy.header.consultCta}
+              {copy.header.inquiryCta}
             </a>
             <a
               href={site.phoneHref}

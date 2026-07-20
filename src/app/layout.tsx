@@ -1,38 +1,47 @@
 import type { Metadata } from "next";
-import { Outfit, Source_Sans_3 } from "next/font/google";
+import { Outfit, Roboto_Slab, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-outfit",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-source-sans",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
+});
+
+const robotoSlab = Roboto_Slab({
+  subsets: ["latin"],
+  variable: "--font-slab",
+  display: "swap",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "TMS Therapy in Bend, OR | Badlands TMS",
+  title: "Deep TMS in Bend, OR | Badlands TMS",
   description:
-    "FDA-approved TMS therapy for depression and OCD in Bend, Oregon. Brainsway Deep TMS covered by most major insurances. Call (541) 323-8705.",
+    "Physician-led Deep TMS in Bend, Oregon. BrainsWay technology for depression, OCD, and more. Medicare, Medicaid, and commercial insurance accepted. Request a consultation.",
   icons: {
     icon: "/images/favicon.png",
   },
   keywords: [
-    "TMS Bend OR",
+    "Deep TMS Bend OR",
     "Badlands TMS",
-    "depression treatment Bend",
-    "Brainsway Deep TMS",
+    "BrainsWay Deep TMS",
     "treatment resistant depression Oregon",
-    "OCD TMS Oregon",
+    "OCD Deep TMS Oregon",
+    "TMS therapy Bend",
   ],
   openGraph: {
-    title: "TMS Therapy in Bend, OR | Badlands TMS",
+    title: "Deep TMS in Bend, OR | Badlands TMS",
     description:
-      "Safe, FDA-approved Transcranial Magnetic Stimulation for depression and OCD — hope when antidepressants haven't been enough.",
+      "When medication hasn't been enough — physician-led BrainsWay Deep TMS in Bend, Oregon. Medicare, Medicaid, and commercial insurance accepted. Request a consultation.",
     url: "https://www.badlandstms.com",
     siteName: "Badlands TMS",
     locale: "en_US",
@@ -47,7 +56,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.variable} ${sourceSans.variable} font-sans`}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/ycc6aem.css" />
+      </head>
+      <body
+        className={`${outfit.variable} ${sourceSans.variable} ${robotoSlab.variable} font-body`}
+      >
         {children}
       </body>
     </html>

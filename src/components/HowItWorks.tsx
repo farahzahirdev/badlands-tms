@@ -1,4 +1,5 @@
 import { copy } from "@/content/copy";
+import { InlineCta } from "./InlineCta";
 
 export function HowItWorks() {
   return (
@@ -26,6 +27,11 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+
+        <InlineCta
+          prompt={copy.howItWorks.inlineCta.prompt}
+          cta={copy.howItWorks.inlineCta.cta}
+        />
       </div>
     </section>
   );

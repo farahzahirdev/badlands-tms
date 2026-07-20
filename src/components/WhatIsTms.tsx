@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 import { Button } from "./Button";
@@ -6,12 +7,49 @@ export function WhatIsTms() {
   return (
     <section id="tms" className="bl-section" aria-labelledby="tms-heading">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
-        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="bl-fade-up space-y-5">
-            <p className="section-eyebrow">{copy.whatIsTms.eyebrow}</p>
-            <h2 id="tms-heading">{copy.whatIsTms.headline}</h2>
-            <p className="text-lead">{copy.whatIsTms.description}</p>
+        <div className="bl-section-header bl-fade-up">
+          <p className="section-eyebrow">{copy.whatIsTms.eyebrow}</p>
+          <h2 id="tms-heading" className="mt-3">
+            {copy.whatIsTms.headline}
+          </h2>
+          <p className="text-lead mt-4">{copy.whatIsTms.description}</p>
+        </div>
 
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12">
+          {copy.whatIsTms.topics.map((topic, i) => (
+            <article
+              key={topic.title}
+              className="bl-fade-up rounded-card border border-bl-charcoal/8 bg-bl-mist/50 p-5 sm:p-6"
+              style={{ animationDelay: `${i * 60}ms` }}
+            >
+              <div className="mb-3 h-1 w-8 bg-bl-sage" aria-hidden />
+              <h3 className="text-lg text-bl-charcoal">{topic.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-bl-slate">{topic.body}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-12 grid items-start gap-10 lg:mt-14 lg:grid-cols-2 lg:gap-12">
+          <div className="bl-fade-up space-y-5">
+            <div className="rounded-card border border-bl-sage/20 bg-bl-sage-light/40 p-5 sm:p-6">
+              <h3 className="font-heading text-lg font-semibold text-bl-charcoal">
+                {copy.whatIsTms.brainsway.headline}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-bl-slate">
+                {copy.whatIsTms.brainsway.description}
+              </p>
+              <ul className="mt-4 space-y-2">
+                {copy.whatIsTms.brainsway.highlights.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-bl-charcoal">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-bl-sage-deep" aria-hidden />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="bl-fade-up space-y-3">
             <div className="overflow-hidden rounded-image border border-bl-charcoal/8 bg-bl-charcoal shadow-card">
               <div className="relative aspect-video w-full">
                 <iframe
@@ -26,22 +64,6 @@ export function WhatIsTms() {
               </div>
             </div>
             <p className="text-sm font-medium text-bl-slate">{site.brainswayVideoTitle}</p>
-          </div>
-
-          <div className="space-y-5">
-            {copy.whatIsTms.steps.map((step, i) => (
-              <article
-                key={step.title}
-                className="bl-fade-up rounded-card border border-bl-charcoal/8 bg-bl-mist/50 p-5 sm:p-6"
-                style={{ animationDelay: `${(i + 1) * 70}ms` }}
-              >
-                <p className="text-xs font-semibold uppercase tracking-wider text-bl-sage-deep">
-                  Step {String(i + 1).padStart(2, "0")}
-                </p>
-                <h3 className="mt-1 text-lg">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bl-slate">{step.body}</p>
-              </article>
-            ))}
             <div className="flex justify-center pt-2 lg:justify-start">
               <Button href="#contact">{copy.whatIsTms.cta}</Button>
             </div>

@@ -10,7 +10,7 @@ export function Familiar() {
           <div className="relative overflow-hidden rounded-image shadow-card">
             <Image
               src="/images/depression.png"
-              alt={copy.familiar.imageCaption}
+              alt={copy.familiar.imageAlt}
               width={1200}
               height={900}
               className="aspect-[4/5] max-h-[360px] w-full object-cover sm:aspect-[5/4] sm:max-h-[380px] lg:aspect-[5/6] lg:max-h-none"
@@ -20,7 +20,10 @@ export function Familiar() {
               className="pointer-events-none absolute inset-0 bg-bl-charcoal/45"
               aria-hidden
             />
-            <p className="absolute inset-0 flex items-center justify-center px-5 text-center font-heading text-[clamp(1.35rem,3.5vw,2.15rem)] font-semibold leading-tight tracking-tight text-white sm:px-8">
+            <p
+              className="absolute inset-0 flex items-center justify-center px-5 text-center font-heading text-[clamp(1.35rem,3.5vw,2.15rem)] font-semibold leading-tight tracking-tight text-white sm:px-8"
+              aria-hidden
+            >
               {copy.familiar.imageCaption}
             </p>
           </div>
@@ -33,6 +36,9 @@ export function Familiar() {
           <p className="section-eyebrow">{copy.familiar.eyebrow}</p>
           <h2 id="familiar-heading">{copy.familiar.headline}</h2>
           <p className="text-lead mx-auto lg:mx-0">{copy.familiar.description}</p>
+          <p className="mx-auto text-sm leading-relaxed text-bl-slate lg:mx-0">
+            {copy.familiar.hopeNote}
+          </p>
 
           <ul className="mx-auto max-w-md space-y-5 pt-2 text-left lg:mx-0 lg:max-w-none">
             {copy.familiar.pillars.map((pillar) => (
@@ -44,9 +50,7 @@ export function Familiar() {
           </ul>
 
           <div className="flex justify-center pt-2 lg:justify-start">
-            <Button href="#tms" variant="secondary">
-              {copy.familiar.cta}
-            </Button>
+            <Button href="#contact">{copy.hero.primaryCta}</Button>
           </div>
         </div>
       </div>

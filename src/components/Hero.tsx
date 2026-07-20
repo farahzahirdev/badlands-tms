@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { Phone } from "lucide-react";
 import { copy } from "@/content/copy";
-import { site } from "@/content/site";
 import { Button } from "./Button";
 
 export function Hero() {
@@ -12,7 +10,7 @@ export function Hero() {
           <div className="bl-hero-media" aria-hidden>
             <Image
               src="/images/hero-site.jpg"
-              alt="Person looking out over a canyon landscape at sunset — hope and perspective with Badlands TMS"
+              alt=""
               fill
               priority
               quality={92}
@@ -35,7 +33,11 @@ export function Hero() {
                 />
                 <h1
                   id="hero-heading"
-                  className="!text-[clamp(2.1rem,8vw,3.25rem)] !font-bold !leading-[1.14] !tracking-[-0.03em] !text-white"
+                  className="!text-[clamp(2.1rem,8vw,3.25rem)] !leading-[1.14] !tracking-[-0.03em] !text-white"
+                  style={{
+                    fontFamily:
+                      "freight-sans-pro, var(--font-source-sans), system-ui, sans-serif",
+                  }}
                 >
                   {copy.hero.headline}
                 </h1>
@@ -51,20 +53,20 @@ export function Hero() {
                   >
                     {copy.hero.primaryCta}
                   </Button>
-                  <a
-                    href={site.phoneHref}
-                    className="inline-flex h-12 items-center gap-2 rounded-full border border-white/40 bg-transparent px-5 text-sm font-semibold text-white transition hover:bg-white/10"
+                  <Button
+                    href="#contact"
+                    variant="secondary"
+                    className="!rounded-full !border-white/40 !bg-transparent !text-white hover:!border-white/60 hover:!bg-white/10"
                   >
-                    <Phone className="h-4 w-4" aria-hidden />
                     {copy.hero.secondaryCta}
-                  </a>
+                  </Button>
                 </div>
 
                 <ul
                   className="flex flex-wrap items-center justify-center gap-2 pt-1 lg:justify-start"
                   aria-label="Treatment highlights"
                 >
-                  {copy.hero.chips.slice(0, 5).map((chip) => (
+                  {copy.hero.chips.map((chip) => (
                     <li
                       key={chip}
                       className="rounded-full border border-white/35 bg-white/[0.08] px-3.5 py-1.5 text-xs font-semibold tracking-wide text-white"

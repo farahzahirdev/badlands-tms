@@ -3,68 +3,130 @@ export const copy = {
   header: {
     nav: {
       approach: "Our Approach",
-      tms: "What Is TMS",
+      tms: "Deep TMS",
       doctor: "Our Team",
       benefits: "Benefits",
       faq: "FAQ",
     },
-    callCta: "Call Now",
-    consultCta: "Consultation",
+    inquiryCta: "Request Consultation",
   },
   hero: {
     brand: "Badlands TMS",
-    headline: "You Don't Have to Fight Depression Anymore",
+    headline: "When Medication Hasn't Been Enough, Deep TMS May Help",
     subheadline:
-      "TMS Therapy is a safe, FDA-approved depression treatment in Bend, OR — covered by most major insurances, and offered with Brainsway Deep TMS technology.",
-    primaryCta: "Schedule an Appointment",
-    secondaryCta: "Call (541) 323-8705",
+      "You are not alone. Many patients come to Badlands TMS after years of frustration — when antidepressants haven't provided enough relief or side effects have made daily life harder. Our physician-led team offers BrainsWay Deep TMS, an advanced, evidence-based treatment in Bend, Oregon.",
+    primaryCta: "Request a Consultation",
+    secondaryCta: "Submit an Inquiry",
     chips: [
-      "FDA-Approved",
-      "Brainsway Deep TMS",
-      "Minimal Side Effects",
-      "Insurance Covered",
-      "Bend, OR",
+      "BrainsWay Deep TMS",
+      "Psychiatrist-Led",
+      "FDA-Cleared",
+      "Medicare & Medicaid",
+      "Adults & Adolescents",
     ],
     sessionNote:
-      "Hope for lasting relief — typically in about 6–8 weeks of outpatient care.",
+      "Evidence-based, outpatient care — typically completed in about 6–8 weeks.",
+  },
+  trustBar: {
+    eyebrow: "Why patients choose Badlands TMS",
+    items: [
+      "Psychiatrist-Owned Practice",
+      "BrainsWay Deep TMS Technology",
+      "Medicare Accepted",
+      "Medicaid Accepted",
+      "FDA-Cleared Treatment",
+      "Adults & Adolescents",
+      "Evidence-Based Care",
+    ],
   },
   insuranceStrip: {
-    label: "Most major insurance plans cover TMS therapy",
+    label: "Medicare, Medicaid, and most major commercial plans accepted",
   },
   familiar: {
-    eyebrow: "New Hope in Bend, OR",
-    headline: "When antidepressants haven't been enough",
-    imageCaption: "You Can Overcome Depression",
+    eyebrow: "You Are Not Alone",
+    headline: "When depression won't let go, there is another option",
+    imageCaption: "Hope for Lasting Relief",
+    imageAlt:
+      "Person finding hope and perspective — representing the journey toward relief with Deep TMS",
     description:
-      "Clinical depression can turn your life upside down. Badlands TMS offers hope through Transcranial Magnetic Stimulation — highly effective, safe, and FDA approved for people who haven't found lasting relief through antidepressants.",
-    cta: "Learn what TMS is",
+      "If you've tried antidepressants without lasting success, you know how exhausting the search for relief can feel. Badlands TMS was built for people in exactly that situation — offering Deep TMS guided by an experienced psychiatrist-led team, not a high-volume corporate treatment center.",
+    hopeNote:
+      "Many of our patients arrive after years of trial and error. Our goal is to help you understand your options with compassion, clarity, and personalized care.",
+    cta: "Learn About Deep TMS",
     pillars: [
       {
-        title: "Safe and FDA approved",
-        body: "TMS uses a targeted magnetic field to stimulate areas of the brain that help control mood. It is well-tolerated, with minimal side effects for most patients.",
+        title: "Physician-led, personalized care",
+        body: "Dr. Chad Brown, M.D. owns and leads Badlands TMS — emphasizing individualized treatment planning, long-term psychiatric care, and direct access to experienced mental health professionals.",
       },
       {
-        title: "Built for lasting relief",
-        body: "TMS can provide real, long-term results. In a one-year observational study, 60% of patients who met response or remission criteria still met those criteria 12 months later.",
+        title: "BrainsWay Deep TMS technology",
+        body: "We use BrainsWay Deep TMS — FDA-cleared technology designed for deeper brain stimulation and a broader range of treatable conditions than traditional TMS.",
       },
       {
-        title: "Covered by insurance",
-        body: "This depression treatment in Bend, OR is FDA approved and covered by most major insurers. Medicare and Tricare options may also apply — ask us about your plan.",
+        title: "Insurance accessibility",
+        body: "We accept Medicare, Medicaid, and most major commercial plans. Submit an inquiry and our team can help verify your benefits — coverage cannot be guaranteed in advance.",
       },
     ],
   },
+  candidate: {
+    eyebrow: "Who Is a Candidate?",
+    headline: "Is Deep TMS right for you?",
+    description:
+      "Deep TMS is often considered for adults and adolescents with conditions such as major depressive disorder or OCD — especially when medications or other approaches haven't brought enough relief. You may be a good fit if you recognize yourself in any of the following.",
+    signs: [
+      "Antidepressants haven't provided enough relief",
+      "Medication side effects have been difficult to manage",
+      "You're looking for a drug-free, non-invasive option",
+      "You want evidence-based care from a specialized team",
+      "You're seeking treatment beyond a general psychiatric practice",
+      "You're exploring options for yourself or an adolescent family member",
+    ],
+    note: "Every patient is unique. A clinical evaluation with our physician-led team is the best way to determine candidacy — and whether Deep TMS may be appropriate for your situation.",
+    cta: "Request an Evaluation",
+  },
   doctor: {
-    eyebrow: "Meet Our Team",
-    headline: "Care led by Chad Brown, M.D.",
+    eyebrow: "Psychiatrist-Owned & Physician-Led",
+    headline: "Care guided by Chad Brown, M.D.",
     name: "Chad Brown, M.D.",
-    role: "Pediatric & Adult Psychiatrist",
-    bio: "Dr. Brown is a pediatric and adult psychiatrist who has been working in Southern Oregon since 2011. He has a psychotherapy and medication management practice in addition to the TMS clinic. He completed his child and adolescent psychiatry fellowship at Oregon Health & Science University in Portland, his adult psychiatry residency at the University of Vermont Medical Center, and medical school at the University of Texas Medical School in Houston. He majored in biochemistry and molecular biology as an undergraduate at the University of Georgia.",
-    cta: "Contact Our Team",
+    role: "Pediatric & Adult Psychiatrist · Owner",
+    bio: "Dr. Brown is a pediatric and adult psychiatrist who has served Southern Oregon since 2011. He owns and leads Badlands TMS with a focus on interventional psychiatry — offering personalized, long-term treatment planning and individualized patient care rather than one-size-fits-all approaches. His practice also includes psychotherapy and medication management, reinforcing a comprehensive psychiatric care model for adults and adolescents. He completed his child and adolescent psychiatry fellowship at Oregon Health & Science University, adult psychiatry residency at the University of Vermont Medical Center, and medical school at the University of Texas Medical School in Houston.",
+    cta: "Request a Consultation",
     stats: [
       { value: "2011", label: "Serving Oregon since" },
       { value: "75%", label: "Show significant clinical benefit*" },
       { value: "50%", label: "Achieve full remission*" },
       { value: "6–8", label: "Weeks typical treatment course" },
+    ],
+    statsNote:
+      "*Outcomes based on BrainsWay published clinical and real-world data. Individual results vary and are not guaranteed.",
+  },
+  clinic: {
+    eyebrow: "Our Clinic",
+    headline: "A calm, professional setting for Deep TMS",
+    description:
+      "Badlands TMS is designed to feel welcoming and reassuring — from your first consultation through each outpatient treatment session.",
+    images: [
+      {
+        src: "/images/brainway-deep.png",
+        alt: "BrainsWay Deep TMS treatment system at Badlands TMS",
+        title: "BrainsWay Deep TMS",
+        caption:
+          "FDA-cleared technology designed for deeper stimulation — one of the most advanced TMS systems available.",
+      },
+      {
+        src: "/images/clinic.jpg",
+        alt: "Badlands TMS clinic interior in Bend, Oregon",
+        title: "Our Bend Clinic",
+        caption:
+          "A comfortable, physician-led environment focused on interventional psychiatry and personalized care.",
+      },
+      {
+        src: "/images/nature.jpg",
+        alt: "Scenic Oregon landscape near Bend — representing calm and hope",
+        title: "Hope & Healing in Central Oregon",
+        caption:
+          "Located in Bend, Oregon — serving adults and adolescents throughout the region.",
+      },
     ],
   },
   teamExtras: {
@@ -87,145 +149,225 @@ export const copy = {
   },
   howItWorks: {
     eyebrow: "Getting Started",
-    headline: "Your path to TMS treatment",
+    headline: "Your path to Deep TMS treatment",
     steps: [
       {
         step: "01",
-        title: "Reach out",
+        title: "Submit an inquiry",
         description:
-          "Call us or send a confidential inquiry. We'll answer your questions and help you understand whether TMS may be right for you.",
+          "Share a few details through our confidential inquiry form. Our team will answer your questions and help you understand whether Deep TMS may be right for you.",
       },
       {
         step: "02",
         title: "Clinical evaluation",
         description:
-          "Meet with our team to review your history, goals, and insurance coverage for treatment.",
+          "Meet with our physician-led team to review your history, treatment goals, and insurance coverage. We'll discuss candidacy and what to expect during care.",
       },
       {
         step: "03",
-        title: "Begin TMS",
+        title: "Begin Deep TMS",
         description:
-          "Complete short outpatient sessions over about 6–8 weeks. Most patients resume daily activities right after treatment.",
+          "Complete short outpatient sessions over about 6–8 weeks. Most patients resume daily activities immediately after each visit.",
       },
     ],
+    inlineCta: {
+      prompt: "Wondering if you're a candidate?",
+      cta: "Request an Evaluation",
+    },
   },
   whatIsTms: {
-    eyebrow: "What Is TMS",
-    headline: "Transcranial Magnetic Stimulation — how it works",
+    eyebrow: "What Is Deep TMS",
+    headline: "Deep Transcranial Magnetic Stimulation — how it works",
     description:
-      "TMS stands for Transcranial Magnetic Stimulation. This depression treatment in Oregon uses a targeted magnetic field to stimulate areas of the brain that control mood. At Badlands, we provide Brainsway Deep TMS technology. TMS is non-invasive, FDA approved, and drug-free. During sessions, patients sit and relax — and can resume daily activities immediately afterward.",
-    steps: [
+      "Deep TMS is a non-invasive, drug-free treatment that uses magnetic pulses to stimulate brain areas involved in mood and related conditions. Sessions are outpatient — you remain awake, and most people return to their day afterward.",
+    brainsway: {
+      headline: "Why BrainsWay technology is different",
+      description:
+        "Badlands uses the BrainsWay Deep TMS system — FDA-cleared technology with a specialized H-coil design. It reaches deeper brain structures than conventional TMS, supporting treatment across a broader range of FDA-cleared indications including major depressive disorder and OCD.",
+      highlights: [
+        "FDA-cleared Deep TMS technology",
+        "Deeper stimulation than traditional TMS",
+        "Multiple FDA-cleared indications",
+        "Trusted by clinics worldwide",
+        "Non-invasive, outpatient care",
+      ],
+    },
+    topics: [
       {
-        title: "Gentle magnetic pulses",
-        body: "Similar in type and strength to an MRI, pulses stimulate brain areas responsible for mood control.",
+        title: "What Deep TMS is",
+        body: "Targeted magnetic stimulation of brain circuits involved in depression, OCD, and related conditions — without surgery, implants, or systemic medication.",
       },
       {
-        title: "Supports healthier brain activity",
-        body: "Treatment can optimize blood flow, facilitate neurotransmitter release, and encourage BDNF — a chemical that impacts connections between brain cells.",
+        title: "How it works",
+        body: "Gentle pulses, similar in type to an MRI, encourage healthier activity in mood-related brain regions. No anesthesia is required.",
       },
       {
-        title: "Outpatient and comfortable",
-        body: "You remain awake. Some patients feel minor to moderate discomfort at the treatment site, which usually subsides quickly.",
+        title: "Different from medication",
+        body: "Deep TMS acts on brain activity directly rather than through the bloodstream — an option when antidepressants haven't helped enough or side effects are hard to tolerate.",
       },
       {
-        title: "Returns you to your day",
-        body: "No anesthesia and typically no downtime — you can go back to work or home after each visit.",
+        title: "Different from traditional TMS",
+        body: "Traditional TMS focuses on more surface-level areas. Deep TMS is designed to reach deeper structures, which can support a wider set of FDA-cleared uses.",
       },
     ],
-    cta: "Ask If TMS Is Right for You",
+    cta: "Submit an Inquiry",
   },
-  benefits: {
-    eyebrow: "Are Other Treatments Not Working?",
-    headline: "Badlands TMS can help",
-    items: [
+  whatToExpect: {
+    eyebrow: "What to Expect",
+    headline: "What treatment looks like",
+    description:
+      "A typical course spans about 6–8 weeks. Here is what happens before, during, and after each stage of care.",
+    phases: [
       {
-        title: "75% show clinical benefit*",
-        body: "In real clinical settings, 75% of patients showed significant response to TMS therapy.",
+        title: "Before treatment",
+        points: [
+          "Initial consultation and clinical evaluation",
+          "Review of history, goals, and insurance",
+          "Personalized treatment planning with our physician-led team",
+        ],
       },
       {
-        title: "50% achieve full remission*",
-        body: "In real-life practice settings, 1 in 2 patients who completed a TMS course for depression achieved full remission.",
+        title: "During treatment",
+        points: [
+          "Comfortable outpatient sessions",
+          "You remain awake throughout",
+          "Gentle magnetic stimulation — no anesthesia",
+        ],
+      },
+      {
+        title: "After treatment",
+        points: [
+          "Resume normal daily activities",
+          "No recovery downtime required",
+          "Gradual improvement over the treatment course",
+        ],
+      },
+    ],
+  },
+  benefits: {
+    eyebrow: "Why Choose Badlands TMS",
+    headline: "Specialized Deep TMS care in Bend, Oregon",
+    items: [
+      {
+        title: "Interventional psychiatry focus",
+        body: "Badlands focuses specifically on Deep TMS and interventional psychiatry — a destination for patients who haven't responded to antidepressants or want an evidence-based, non-invasive next step.",
+      },
+      {
+        title: "Treatment beyond depression",
+        body: "Unlike clinics focused only on depression, Badlands offers Deep TMS for multiple FDA-cleared indications including OCD — with broader clinical expertise when appropriate.",
+      },
+      {
+        title: "BrainsWay Deep TMS technology",
+        body: "Patients receive one of the most advanced forms of TMS available — FDA-cleared technology designed for deeper stimulation and a wider range of treatable conditions.",
       },
       {
         title: "When medication falls short",
-        body: "About 33% of MDD patients are resistant to medication, and 52% fail to respond to first-line therapy. FDA-approved TMS is an option when antidepressants don't bring the needed results.",
+        body: "Deep TMS is an option for patients who haven't responded to antidepressants, experienced medication side effects, or want a non-invasive alternative to adding more medications.",
       },
       {
-        title: "Brainsway Deep TMS",
-        body: "Badlands TMS provides Brainsway technology. Studies of deep TMS have shown meaningful response even for patients who did not respond to acute TMS treatment alone.",
+        title: "Adults & adolescents",
+        body: "Badlands provides care for both adults and adolescents. Families exploring treatment for teens can reach out to learn more about candidacy and what care may involve.",
       },
       {
-        title: "Long-lasting improvement",
-        body: "Further studies demonstrate that TMS therapy often leads to long-term remission for people fighting major depressive disorder.",
-      },
-      {
-        title: "Covered by insurance",
-        body: "Most major plans cover TMS. Even if we don't currently accept your insurance, we may be able to contract with your carrier.",
+        title: "Insurance accessibility",
+        body: "We accept Medicare, Medicaid, and most major commercial plans. Coverage varies by plan — submit an inquiry and our team will help verify your benefits.",
       },
     ],
-    note: "*Figures come from Brainsway clinical and real-world data. Individual results vary.",
-    cta: "Schedule an Appointment",
+    note: "*Clinical outcome figures based on BrainsWay published data. Individual results vary.",
+    cta: "Request a Consultation",
   },
   conditions: {
     eyebrow: "Conditions We Treat",
-    headline: "Depression, OCD, and anxiety",
+    headline: "FDA-cleared Deep TMS indications",
     items: [
       {
         title: "Major Depressive Disorder",
-        body: "FDA-approved TMS for treatment-resistant depression — especially if medications haven't helped or side effects have been hard to tolerate.",
+        body: "FDA-cleared Deep TMS for treatment-resistant depression — especially when medications haven't helped or side effects have been hard to tolerate.",
       },
       {
-        title: "OCD",
-        body: "Our team can help with OCD. Tricare now covers treatment for OCD — contact us to learn more.",
+        title: "Obsessive-Compulsive Disorder",
+        body: "Deep TMS for OCD when other approaches haven't brought enough relief. Our team can discuss candidacy, coverage, and what treatment involves.",
       },
       {
-        title: "Anxiety",
-        body: "Badlands TMS also helps patients with anxiety, particularly when other approaches have not brought enough relief.",
+        title: "Additional conditions",
+        body: "Beyond core FDA-cleared indications, our physician-led team may explore appropriate Deep TMS treatment opportunities when clinically appropriate.",
       },
     ],
   },
   insurance: {
-    eyebrow: "Insurance",
-    headline: "Most major insurances cover TMS therapy",
+    eyebrow: "Insurance & Access",
+    headline: "Treatment may be more accessible than you expect",
     description:
-      "Even if we don't accept your insurance, we may be able to contract with your insurance company to cover the cost of TMS therapy. Medicare may also apply.",
-    note: "Have questions about coverage? Call us or schedule an appointment and we'll help you verify your benefits.",
-    cta: "Schedule an Appointment Today",
+      "Badlands TMS accepts Medicare, Medicaid, and most major commercial insurance plans. Coverage is plan-specific and cannot be guaranteed in advance — but our team will help verify your benefits and discuss available options when you submit an inquiry.",
+    note: "Have questions about coverage? Submit an inquiry and we'll walk you through the verification process.",
+    cta: "Verify My Benefits",
+    inlineCta: {
+      prompt: "Not sure if your plan covers Deep TMS?",
+      cta: "Submit an Inquiry",
+    },
   },
   faq: {
     eyebrow: "FAQ",
-    headline: "Common questions about TMS at Badlands",
+    headline: "Common questions about Deep TMS",
     items: [
       {
-        q: "Is TMS painful?",
-        a: "TMS has minimal side effects for most patients. Some people feel minor to moderate discomfort at the treatment site, but it typically subsides quickly.",
+        q: "What is Deep TMS?",
+        a: "Deep TMS (Deep Transcranial Magnetic Stimulation) uses magnetic pulses to stimulate areas of the brain involved in mood and related conditions. Badlands uses BrainsWay Deep TMS technology, designed to reach deeper brain structures than traditional TMS.",
       },
       {
-        q: "How long does a treatment course take?",
-        a: "We can help in as little as 6–8 weeks. Sessions are outpatient, and patients can usually resume daily activities immediately after treatment.",
+        q: "How is Deep TMS different from traditional TMS?",
+        a: "Traditional TMS targets surface-level brain areas. BrainsWay Deep TMS uses specialized H-coils designed to reach deeper structures, supporting treatment across a broader range of FDA-cleared indications.",
       },
       {
-        q: "Will insurance cover TMS?",
-        a: "Most major insurances cover TMS therapy. Even if we don't currently accept your plan, we may be able to contract with your insurance company. Ask us about Medicare and Tricare options as well.",
+        q: "Does treatment hurt?",
+        a: "Most patients tolerate Deep TMS well. Some feel minor to moderate discomfort at the treatment site during sessions, which typically subsides quickly. No anesthesia is required.",
+      },
+      {
+        q: "How long does treatment take?",
+        a: "A typical course spans about 6–8 weeks of outpatient sessions. Each visit is relatively short, and most patients resume daily activities immediately afterward.",
+      },
+      {
+        q: "What conditions can Deep TMS treat?",
+        a: "Badlands offers Deep TMS for FDA-cleared indications including major depressive disorder and OCD. Our physician-led team can discuss whether Deep TMS may be appropriate for your situation.",
+      },
+      {
+        q: "Is Deep TMS covered by insurance?",
+        a: "We accept Medicare, Medicaid, and most major commercial plans. Coverage varies — submit an inquiry and our team will help verify your benefits. We cannot guarantee coverage in advance.",
+      },
+      {
+        q: "What happens during an appointment?",
+        a: "You'll sit comfortably while a trained clinician positions the BrainsWay coil and delivers magnetic pulses. Sessions are outpatient, and you remain awake throughout. You can typically return to your normal routine right after.",
+      },
+      {
+        q: "How long until patients notice improvement?",
+        a: "Timing varies. Some patients notice changes within the first few weeks; others see gradual improvement over the full treatment course. Your care team will monitor progress throughout.",
       },
       {
         q: "Who is a good candidate?",
-        a: "TMS could be an option if you have been diagnosed with depression and have tried therapy, or antidepressants don't bring the needed results — or if you would like to avoid antidepressant side effects.",
+        a: "Deep TMS may be appropriate if you've been diagnosed with a treatable condition such as depression or OCD and haven't found enough relief from medications or other approaches — or if you'd like to explore a non-invasive option. A clinical evaluation with our team is the best way to determine candidacy.",
       },
       {
-        q: "Do you treat OCD?",
-        a: "Yes. If you are looking for treatment for OCD, our team will be able to help. Tricare now covers treatment for OCD.",
+        q: "Do you treat adolescents?",
+        a: "Yes. Badlands provides care for both adults and adolescents. Families interested in treatment for teens can submit an inquiry to learn more about candidacy and what care may involve.",
       },
     ],
+    inlineCta: {
+      prompt: "Still have questions about Deep TMS?",
+      cta: "Request a Consultation",
+    },
+  },
+  inlineCta: {
+    prompt: "Wondering if you're a candidate?",
+    cta: "Request an Evaluation",
   },
   contact: {
-    eyebrow: "Contact Badlands TMS",
-    headline: "Ready to take the next step?",
+    eyebrow: "Request a Consultation",
+    headline: "Take the next step toward Deep TMS",
     description:
-      "Do you have questions or would you like to book an appointment? Contact us or fill out this confidential form. We are here to help.",
-    formTitle: "Book an Appointment",
-    formSubtitle: "Share a few details and our team will follow up with you.",
-    callPrompt: "Call us today",
+      "Submit a confidential inquiry and our physician-led team will follow up to answer your questions, discuss candidacy, and help verify insurance benefits.",
+    formTitle: "Deep TMS Inquiry Form",
+    formSubtitle: "Share a few details and our team will reach out to you.",
+    phoneLabel: "Phone",
     hoursLabel: "Hours",
     trustLine: "100% confidential · Bend, OR · Mon–Fri 8:30 AM–5:00 PM",
   },
@@ -250,25 +392,24 @@ export const copy = {
     submitting: "Sending…",
     successTitle: "Thank you — we received your inquiry.",
     successBody:
-      "Our team will contact you soon. For faster help, call us at (541) 323-8705.",
-    error: "Please complete all required fields, or call us at (541) 323-8705.",
+      "Our team will contact you soon to discuss Deep TMS candidacy and next steps.",
+    error: "Please complete all required fields before submitting.",
   },
   footer: {
     tagline:
-      "Badlands TMS offers FDA-approved TMS therapy for depression and OCD in Bend, Oregon.",
+      "Physician-led Deep TMS in Bend, Oregon — BrainsWay technology for adults and adolescents.",
     contactHeading: "Visit Us",
     quickLinksHeading: "Quick Links",
     notEmergency:
-      "Badlands TMS is not an emergency or crisis center. If you are experiencing a medical or psychiatric emergency, call 911 or go to the nearest emergency room. For the Suicide & Crisis Lifeline, call or text 988.",
+      "Not an emergency service. In a crisis, call 911 or the Suicide & Crisis Lifeline at 988.",
     disclaimer:
-      "This website provides general information about TMS therapy and is not a substitute for professional medical advice, diagnosis, or treatment. Outcomes vary. Always consult a qualified clinician.",
+      "This website provides general information about Deep TMS therapy and is not a substitute for professional medical advice, diagnosis, or treatment. Outcomes vary. Always consult a qualified clinician.",
     oregonNote:
       "It is the client's responsibility to notify Path To Awareness, P.C. if you will not be physically located in the state of Oregon at the time of a scheduled telehealth appointment. Our providers' licenses only allow practicing when both parties are located in Oregon.",
     rights: "All rights reserved.",
   },
   floatingCta: {
-    call: "Call",
-    book: "Book Appointment",
+    inquiry: "Request Consultation",
   },
 } as const;
 

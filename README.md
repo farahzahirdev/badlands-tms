@@ -85,7 +85,7 @@ Update these files to change messaging or contact information without editing co
 | Charcoal | `#272A2B` | Headings and body text   |
 | Mist     | `#F5F8F7` | Section backgrounds      |
 
-Typography: **Outfit** (headings) and **Source Sans 3** (body).
+Typography: **brandon-grotesque** (headings), **Roboto Slab** (subheadings), **freight-sans-pro** (body) — matching [badlandstms.com](https://www.badlandstms.com/).
 
 ## License
 

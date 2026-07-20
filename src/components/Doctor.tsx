@@ -25,7 +25,7 @@ export function Doctor() {
           <div className="overflow-hidden rounded-image bg-bl-sage-light shadow-card">
             <Image
               src="/images/dr-brown.jpeg"
-              alt="Chad Brown, M.D., Pediatric and Adult Psychiatrist"
+              alt="Chad Brown, M.D., Owner and Pediatric & Adult Psychiatrist at Badlands TMS"
               width={644}
               height={644}
               className="aspect-square w-full object-cover object-top"
@@ -48,6 +48,9 @@ export function Doctor() {
           </div>
         ))}
       </div>
+      <p className="text-small mx-auto mt-6 max-w-2xl px-4 text-center text-bl-slate/80 sm:px-6 lg:px-8">
+        {copy.doctor.statsNote}
+      </p>
     </section>
   );
 }

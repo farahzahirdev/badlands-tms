@@ -1,4 +1,4 @@
-import { Clock, MapPin, Phone, Mail } from "lucide-react";
+import { Clock, MapPin, Mail } from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 import { InquiryForm } from "./InquiryForm";
@@ -13,24 +13,6 @@ export function Contact() {
           <p className="text-lead">{copy.contact.description}</p>
 
           <ul className="space-y-4">
-            <li>
-              <a
-                href={site.phoneHref}
-                className="group flex items-start gap-3 rounded-xl p-2 transition hover:bg-bl-sage-light/60"
-              >
-                <span className="bl-icon-badge p-2.5">
-                  <Phone className="h-4 w-4" aria-hidden />
-                </span>
-                <span>
-                  <span className="block text-xs font-semibold uppercase tracking-wider text-bl-slate">
-                    {copy.contact.callPrompt}
-                  </span>
-                  <span className="mt-0.5 block font-heading text-lg font-semibold text-bl-charcoal group-hover:text-bl-sage-deep">
-                    {site.phone}
-                  </span>
-                </span>
-              </a>
-            </li>
             <li>
               <a
                 href={site.emailHref}

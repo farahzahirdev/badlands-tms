@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import { copy } from "@/content/copy";
+import { InlineCta } from "./InlineCta";
 
 function FaqItem({
   question,
@@ -29,7 +30,7 @@ function FaqItem({
         aria-expanded={open}
         aria-controls={panelId}
         onClick={onToggle}
-        className="flex w-full cursor-pointer items-center justify-between gap-4 text-left font-heading text-base font-semibold text-bl-charcoal"
+        className="flex w-full cursor-pointer items-center justify-between gap-4 text-left font-body text-base font-medium text-bl-charcoal"
       >
         <span>{question}</span>
         <span
@@ -51,7 +52,7 @@ function FaqItem({
       >
         <div className="min-h-0 overflow-hidden">
           <p
-            className={`pr-8 text-sm leading-relaxed text-bl-slate transition-[opacity,transform,margin] duration-300 ease-out motion-reduce:transition-none ${
+            className={`pr-8 font-body text-sm leading-relaxed text-bl-slate transition-[opacity,transform,margin] duration-300 ease-out motion-reduce:transition-none ${
               open
                 ? "mt-3 translate-y-0 opacity-100"
                 : "mt-0 -translate-y-1 opacity-0"
@@ -67,6 +68,7 @@ function FaqItem({
 
 export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const items = copy.faq.items;
 
   return (
     <section
@@ -82,8 +84,9 @@ export function Faq() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-10 max-w-3xl space-y-3 lg:mt-12">
-          {copy.faq.items.map((item, index) => (
+        {/* Mobile: keep original order in a single column */}
+        <div className="mx-auto mt-10 space-y-3 max-w-5xl lg:mt-12 lg:hidden">
+          {items.map((item, index) => (
             <FaqItem
               key={item.q}
               question={item.q}
@@ -95,6 +98,47 @@ export function Faq() {
             />
           ))}
         </div>
+
+        {/* Desktop/Laptop: split into two independent stacks to avoid row-height coupling */}
+        <div className="hidden lg:mt-12 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-4">
+          <div className="space-y-3">
+            {items.map((item, index) => {
+              if (index % 2 !== 0) return null;
+              return (
+                <FaqItem
+                  key={item.q}
+                  question={item.q}
+                  answer={item.a}
+                  open={openIndex === index}
+                  onToggle={() =>
+                    setOpenIndex((current) => (current === index ? null : index))
+                  }
+                />
+              );
+            })}
+          </div>
+          <div className="space-y-3">
+            {items.map((item, index) => {
+              if (index % 2 === 0) return null;
+              return (
+                <FaqItem
+                  key={item.q}
+                  question={item.q}
+                  answer={item.a}
+                  open={openIndex === index}
+                  onToggle={() =>
+                    setOpenIndex((current) => (current === index ? null : index))
+                  }
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        <InlineCta
+          prompt={copy.faq.inlineCta.prompt}
+          cta={copy.faq.inlineCta.cta}
+        />
       </div>
     </section>
   );
