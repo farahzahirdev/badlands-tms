@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { Plus } from "lucide-react";
 import { copy } from "@/content/copy";
 import { InlineCta } from "./InlineCta";
 
@@ -34,12 +35,12 @@ function FaqItem({
       >
         <span>{question}</span>
         <span
-          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bl-sage-light text-bl-sage-deep transition-transform duration-300 ease-out ${
+          className={`inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-bl-sage-light text-bl-sage-deep transition-transform duration-300 ease-out ${
             open ? "rotate-45" : "rotate-0"
           }`}
           aria-hidden
         >
-          +
+          <Plus className="h-3 w-3" strokeWidth={2.25} />
         </span>
       </button>
 
