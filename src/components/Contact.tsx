@@ -90,7 +90,7 @@ export function Contact() {
           </ul>
 
           <div className="overflow-hidden rounded-card border border-bl-charcoal/8 bg-white shadow-soft">
-            <div className="relative aspect-[16/8] w-full bg-bl-mist sm:aspect-[16/7]">
+            <div className="relative h-40 w-full bg-bl-mist sm:h-44 lg:h-48">
               <iframe
                 title={`Map of ${site.name} at ${site.address}`}
                 src={site.mapsEmbedUrl}
@@ -104,7 +104,7 @@ export function Contact() {
               href={site.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between gap-3 border-t border-bl-charcoal/8 px-4 py-3 text-sm font-semibold text-bl-charcoal transition hover:bg-bl-sage-light/60 hover:text-bl-sage-deep"
+              className="flex items-center justify-between gap-3 border-t border-bl-charcoal/8 px-4 py-2.5 text-sm font-semibold text-bl-charcoal transition hover:bg-bl-sage-light/60 hover:text-bl-sage-deep"
             >
               <span className="inline-flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-bl-sage-deep" aria-hidden />
@@ -117,7 +117,10 @@ export function Contact() {
           <p className="text-small text-bl-slate">{copy.contact.trustLine}</p>
         </div>
 
-        <div className="bl-fade-up" style={{ animationDelay: "120ms" }}>
+        <div
+          className="bl-fade-up lg:pt-8 xl:pt-10"
+          style={{ animationDelay: "120ms" }}
+        >
           <div className="overflow-hidden rounded-card border border-bl-charcoal/8 bg-white shadow-lift">
             <div className="border-b border-bl-charcoal/8 bg-bl-sage-light/50 px-6 py-5 sm:px-7">
               <p className="font-heading text-lg font-semibold text-bl-charcoal">
