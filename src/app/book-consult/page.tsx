@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SkipLink } from "@/components/SkipLink";
-import { GhlEmbed } from "@/components/GhlEmbed";
+import { GhlCalendarEmbed } from "@/components/GhlCalendarEmbed";
 import { Button } from "@/components/Button";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
@@ -34,14 +34,8 @@ export default function BookConsultPage() {
             </div>
 
             <div className="bl-fade-up mx-auto mt-10 max-w-3xl" style={{ animationDelay: "100ms" }}>
-              <div className="overflow-hidden rounded-card border border-bl-charcoal/8 bg-white p-4 shadow-lift sm:p-6">
-                <GhlEmbed
-                  html={site.ghl.calendarEmbedHtml}
-                  placeholderTitle={site.ghl.calendarName}
-                  placeholderBody={copy.bookConsult.placeholderNote}
-                  caption={site.ghl.calendarName}
-                  minHeight="640px"
-                />
+              <div className="overflow-hidden rounded-card border border-bl-charcoal/8 bg-white p-2 shadow-lift sm:p-4">
+                <GhlCalendarEmbed />
               </div>
             </div>
 

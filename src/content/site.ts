@@ -36,7 +36,13 @@ export const site = {
    */
   ghl: {
     calendarName: "Book a Free 10 Minute Consultation",
-    calendarEmbedHtml: "",
+    calendar: {
+      id: "qOzqYx272PIXMJ0MjBxz",
+      iframeId: "qOzqYx272PIXMJ0MjBxz",
+      src: "https://go.4tms.com/widget/booking/qOzqYx272PIXMJ0MjBxz",
+      scriptSrc: "https://go.4tms.com/js/form_embed.js",
+      title: "Book a Free 10 Minute Consultation",
+    },
     inquiryForm: {
       id: "hduBOjvBi71z47Jx6ogy",
       iframeId: "inline-hduBOjvBi71z47Jx6ogy",
