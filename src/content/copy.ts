@@ -384,24 +384,7 @@ export const copy = {
     headline: "Book a Free 10 Minute Consultation",
     description:
       "Choose a time that works for you. Our team will meet with you to answer questions and discuss next steps for Deep TMS care.",
-    placeholderNote:
-      "GoHighLevel calendar embed will appear here once provided.",
-    backHome: "Back to home",
     callPrompt: "Prefer to talk now?",
-  },
-  thankYouConsult: {
-    eyebrow: "You're booked",
-    headline: "Thank you — your consultation is confirmed",
-    description:
-      "We've received your booking. You'll receive a confirmation shortly, and our team looks forward to speaking with you.",
-    nextStepsHeading: "What happens next",
-    nextSteps: [
-      "Watch for a confirmation email or text with your appointment details.",
-      "Prepare any questions about Deep TMS, insurance, or candidacy.",
-      "If you need to reschedule, call us and we'll help.",
-    ],
-    backHome: "Return to home",
-    callCta: "Call us",
   },
   form: {
     fullName: "Full Name",

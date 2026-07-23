@@ -14,6 +14,7 @@ import { Benefits } from "./Benefits";
 import { Conditions } from "./Conditions";
 import { Insurance } from "./Insurance";
 import { Faq } from "./Faq";
+import { BookConsult } from "./BookConsult";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 
@@ -36,6 +37,7 @@ export function HomePage() {
         <Benefits />
         <Conditions />
         <Insurance />
+        <BookConsult />
         <Faq />
         <Contact />
       </main>

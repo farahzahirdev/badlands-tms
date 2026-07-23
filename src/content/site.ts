@@ -26,8 +26,7 @@ export const site = {
   },
   /** Landing-page conversion destinations */
   routes: {
-    bookConsult: "/book-consult",
-    thankYouConsult: "/thank-you/consult",
+    bookConsult: "/#book-consult",
     inquiry: "/#contact",
   },
   /**
