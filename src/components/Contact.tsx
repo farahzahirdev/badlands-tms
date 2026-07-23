@@ -1,7 +1,7 @@
 import { Clock, MapPin, Mail, Phone } from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
-import { InquiryForm } from "./InquiryForm";
+import { GhlInquiryForm } from "./GhlInquiryForm";
 import { Button } from "./Button";
 
 export function Contact() {
@@ -125,7 +125,9 @@ export function Contact() {
               </p>
               <p className="mt-1 text-sm text-bl-slate">{copy.contact.formSubtitle}</p>
             </div>
-            <InquiryForm id="contact-inquiry" />
+            <div className="bg-white p-0">
+              <GhlInquiryForm />
+            </div>
           </div>
         </div>
       </div>

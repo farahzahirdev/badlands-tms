@@ -16,6 +16,7 @@ export const copy = {
       faq: "FAQ",
     },
     inquiryCta: "Book a Consult",
+    submitInquiryCta: "Submit an Inquiry",
   },
   hero: {
     brand: "Badlands TMS",
