@@ -43,17 +43,6 @@ export function Footer() {
                 {site.phone}
               </a>
             </div>
-            <div className="mt-5 flex items-center justify-center gap-3 sm:justify-start">
-              <a
-                href={site.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Badlands TMS on Facebook"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bl-charcoal/10 bg-white text-bl-charcoal shadow-soft transition hover:border-bl-sage/40 hover:bg-bl-sage-light hover:text-bl-sage-deep"
-              >
-                <Facebook className="h-4 w-4" aria-hidden />
-              </a>
-            </div>
           </div>
 
           <div className="col-span-2 mx-auto grid w-full max-w-md grid-cols-2 gap-6 px-2 sm:max-w-none sm:gap-10 sm:px-0 lg:contents">
@@ -96,6 +85,19 @@ export function Footer() {
                     <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
                   </span>
                   <span className="pt-1.5 leading-relaxed">{site.address}</span>
+                </li>
+                <li>
+                  <a
+                    href={site.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-start gap-2.5 text-sm font-medium text-bl-charcoal transition hover:text-bl-sage-deep sm:items-center sm:gap-3"
+                  >
+                    <span className="bl-icon-badge shrink-0 p-2 sm:p-2.5">
+                      <Facebook className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
+                    </span>
+                    <span className="pt-1.5 leading-snug sm:pt-0">Facebook</span>
+                  </a>
                 </li>
               </ul>
             </div>
