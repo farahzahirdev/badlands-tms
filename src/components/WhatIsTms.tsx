@@ -79,8 +79,11 @@ export function WhatIsTms() {
           </div>
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <Button href="#contact">{copy.whatIsTms.cta}</Button>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Button href={site.routes.inquiry}>{copy.whatIsTms.cta}</Button>
+          <Button href={site.phoneHref} variant="secondary">
+            {copy.ctas.call} {site.phone}
+          </Button>
         </div>
       </div>
     </section>

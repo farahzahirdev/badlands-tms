@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { Button } from "./Button";
 
 export function Familiar() {
@@ -49,8 +50,11 @@ export function Familiar() {
             ))}
           </ul>
 
-          <div className="flex justify-center pt-2 lg:justify-start">
-            <Button href="#contact">{copy.hero.primaryCta}</Button>
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2 lg:justify-start">
+            <Button href={site.routes.bookConsult}>{copy.ctas.bookConsult}</Button>
+            <Button href={site.phoneHref} variant="secondary">
+              {copy.ctas.call} {site.phone}
+            </Button>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ const logos = [
 function LogoTrack({ ariaHidden = false }: { ariaHidden?: boolean }) {
   return (
     <ul
-      className="flex shrink-0 items-center gap-12 px-6 sm:gap-16 sm:px-8"
+      className="flex shrink-0 items-center gap-14 px-6 sm:gap-20 sm:px-8"
       aria-hidden={ariaHidden || undefined}
     >
       {logos.map((logo) => (
@@ -26,9 +26,9 @@ function LogoTrack({ ariaHidden = false }: { ariaHidden?: boolean }) {
           <Image
             src={logo.src}
             alt={ariaHidden ? "" : logo.alt}
-            width={160}
-            height={64}
-            className="h-11 w-auto max-w-none object-contain brightness-0 opacity-55 sm:h-12"
+            width={200}
+            height={80}
+            className="h-16 w-auto max-w-none object-contain brightness-0 sm:h-[4.5rem]"
           />
         </li>
       ))}
@@ -43,7 +43,7 @@ export function InsuranceStrip() {
       className="border-y border-bl-charcoal/8 bg-bl-mist py-12 sm:py-14"
     >
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-sm font-semibold text-bl-charcoal sm:text-base">
+        <p className="text-center font-heading text-lg font-semibold tracking-tight text-bl-charcoal sm:text-xl lg:text-2xl">
           {copy.insuranceStrip.label}
         </p>
 

@@ -1,5 +1,12 @@
 export const copy = {
   skipLink: "Skip to main content",
+  ctas: {
+    bookConsult: "Book a Consult",
+    requestConsult: "Request a Consultation",
+    submitInquiry: "Submit an Inquiry",
+    findOutQualify: "Find Out If You Qualify",
+    call: "Call",
+  },
   header: {
     nav: {
       approach: "Our Approach",
@@ -8,14 +15,14 @@ export const copy = {
       benefits: "Benefits",
       faq: "FAQ",
     },
-    inquiryCta: "Request Consultation",
+    inquiryCta: "Book a Consult",
   },
   hero: {
     brand: "Badlands TMS",
     headline: "When Medication Hasn't Been Enough, Deep TMS May Help",
     subheadline:
       "You are not alone. Many patients come to Badlands TMS after years of frustration — when antidepressants haven't provided enough relief or side effects have made daily life harder. Our physician-led team offers BrainsWay Deep TMS, an advanced, evidence-based treatment in Bend, Oregon.",
-    primaryCta: "Request a Consultation",
+    primaryCta: "Book a Consult",
     secondaryCta: "Submit an Inquiry",
     chips: [
       "BrainsWay Deep TMS",
@@ -82,7 +89,7 @@ export const copy = {
       "You're exploring options for yourself or an adolescent family member",
     ],
     note: "Every patient is unique. A clinical evaluation with our physician-led team is the best way to determine candidacy — and whether Deep TMS may be appropriate for your situation.",
-    cta: "Request an Evaluation",
+    cta: "Find Out If You Qualify",
   },
   doctor: {
     eyebrow: "Psychiatrist-Owned & Physician-Led",
@@ -90,7 +97,7 @@ export const copy = {
     name: "Chad Brown, M.D.",
     role: "Pediatric & Adult Psychiatrist · Owner",
     bio: "Dr. Brown is a pediatric and adult psychiatrist who has served Southern Oregon since 2011. He owns and leads Badlands TMS with a focus on interventional psychiatry — offering personalized, long-term treatment planning and individualized patient care rather than one-size-fits-all approaches. His practice also includes psychotherapy and medication management, reinforcing a comprehensive psychiatric care model for adults and adolescents. He completed his child and adolescent psychiatry fellowship at Oregon Health & Science University, adult psychiatry residency at the University of Vermont Medical Center, and medical school at the University of Texas Medical School in Houston.",
-    cta: "Request a Consultation",
+    cta: "Book a Consult",
     stats: [
       { value: "2011", label: "Serving Oregon since" },
       { value: "75%", label: "Show significant clinical benefit*" },
@@ -172,7 +179,7 @@ export const copy = {
     ],
     inlineCta: {
       prompt: "Wondering if you're a candidate?",
-      cta: "Request an Evaluation",
+      cta: "Find Out If You Qualify",
     },
   },
   whatIsTms: {
@@ -274,7 +281,7 @@ export const copy = {
       },
     ],
     note: "*Clinical outcome figures based on BrainsWay published data. Individual results vary.",
-    cta: "Request a Consultation",
+    cta: "Book a Consult",
   },
   conditions: {
     eyebrow: "Conditions We Treat",
@@ -300,7 +307,7 @@ export const copy = {
     description:
       "Badlands TMS accepts Medicare, Medicaid, and most major commercial insurance plans. Coverage is plan-specific and cannot be guaranteed in advance — but our team will help verify your benefits and discuss available options when you submit an inquiry.",
     note: "Have questions about coverage? Submit an inquiry and we'll walk you through the verification process.",
-    cta: "Verify My Benefits",
+    cta: "Submit an Inquiry",
     inlineCta: {
       prompt: "Not sure if your plan covers Deep TMS?",
       cta: "Submit an Inquiry",
@@ -353,15 +360,15 @@ export const copy = {
     ],
     inlineCta: {
       prompt: "Still have questions about Deep TMS?",
-      cta: "Request a Consultation",
+      cta: "Book a Consult",
     },
   },
   inlineCta: {
     prompt: "Wondering if you're a candidate?",
-    cta: "Request an Evaluation",
+    cta: "Find Out If You Qualify",
   },
   contact: {
-    eyebrow: "Request a Consultation",
+    eyebrow: "Submit an Inquiry",
     headline: "Take the next step toward Deep TMS",
     description:
       "Submit a confidential inquiry and our physician-led team will follow up to answer your questions, discuss candidacy, and help verify insurance benefits.",
@@ -370,6 +377,30 @@ export const copy = {
     phoneLabel: "Phone",
     hoursLabel: "Hours",
     trustLine: "100% confidential · Bend, OR · Mon–Fri 8:30 AM–5:00 PM",
+  },
+  bookConsult: {
+    eyebrow: "Book a Consult",
+    headline: "Book a Free 10 Minute Consultation",
+    description:
+      "Choose a time that works for you. Our team will meet with you to answer questions and discuss next steps for Deep TMS care.",
+    placeholderNote:
+      "GoHighLevel calendar embed will appear here once provided.",
+    backHome: "Back to home",
+    callPrompt: "Prefer to talk now?",
+  },
+  thankYouConsult: {
+    eyebrow: "You're booked",
+    headline: "Thank you — your consultation is confirmed",
+    description:
+      "We've received your booking. You'll receive a confirmation shortly, and our team looks forward to speaking with you.",
+    nextStepsHeading: "What happens next",
+    nextSteps: [
+      "Watch for a confirmation email or text with your appointment details.",
+      "Prepare any questions about Deep TMS, insurance, or candidacy.",
+      "If you need to reschedule, call us and we'll help.",
+    ],
+    backHome: "Return to home",
+    callCta: "Call us",
   },
   form: {
     fullName: "Full Name",
@@ -409,7 +440,7 @@ export const copy = {
     rights: "All rights reserved.",
   },
   floatingCta: {
-    inquiry: "Request Consultation",
+    inquiry: "Book a Consult",
   },
 } as const;
 

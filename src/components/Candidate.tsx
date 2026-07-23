@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { Button } from "./Button";
 
 export function Candidate() {
@@ -35,8 +36,11 @@ export function Candidate() {
 
         <p className="text-small mx-auto mt-8 max-w-2xl text-center">{copy.candidate.note}</p>
 
-        <div className="mt-8 text-center">
-          <Button href="#contact">{copy.candidate.cta}</Button>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Button href={site.routes.inquiry}>{copy.candidate.cta}</Button>
+          <Button href={site.phoneHref} variant="secondary">
+            {copy.ctas.call} {site.phone}
+          </Button>
         </div>
       </div>
     </section>

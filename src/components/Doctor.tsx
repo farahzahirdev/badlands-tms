@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { Button } from "./Button";
 
 export function Doctor() {
@@ -16,8 +17,11 @@ export function Doctor() {
             </p>
           </div>
           <p className="mx-auto max-w-2xl leading-relaxed text-bl-slate lg:mx-0">{copy.doctor.bio}</p>
-          <div className="flex justify-center lg:justify-start">
-            <Button href="#contact">{copy.doctor.cta}</Button>
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+            <Button href={site.routes.bookConsult}>{copy.doctor.cta}</Button>
+            <Button href={site.phoneHref} variant="secondary">
+              {copy.ctas.call} {site.phone}
+            </Button>
           </div>
         </div>
 

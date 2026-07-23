@@ -1,4 +1,5 @@
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { InlineCta } from "./InlineCta";
 
 export function HowItWorks() {
@@ -31,6 +32,9 @@ export function HowItWorks() {
         <InlineCta
           prompt={copy.howItWorks.inlineCta.prompt}
           cta={copy.howItWorks.inlineCta.cta}
+          href={site.routes.inquiry}
+          secondaryCta={copy.ctas.call}
+          secondaryHref={site.phoneHref}
         />
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { Button } from "./Button";
 
 export function Hero() {
@@ -47,18 +48,25 @@ export function Hero() {
 
                 <div className="flex flex-wrap items-center justify-center gap-3 pt-1 lg:justify-start lg:pt-2">
                   <Button
-                    href="#contact"
+                    href={site.routes.bookConsult}
                     variant="primary"
                     className="!rounded-full !bg-white !text-bl-charcoal hover:!bg-bl-sage-light"
                   >
                     {copy.hero.primaryCta}
                   </Button>
                   <Button
-                    href="#contact"
+                    href={site.routes.inquiry}
                     variant="secondary"
                     className="!rounded-full !border-white/40 !bg-transparent !text-white hover:!border-white/60 hover:!bg-white/10"
                   >
                     {copy.hero.secondaryCta}
+                  </Button>
+                  <Button
+                    href={site.phoneHref}
+                    variant="secondary"
+                    className="!rounded-full !border-white/40 !bg-transparent !text-white hover:!border-white/60 hover:!bg-white/10"
+                  >
+                    {copy.ctas.call} {site.phone}
                   </Button>
                 </div>
 

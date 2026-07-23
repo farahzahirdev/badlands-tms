@@ -1,8 +1,8 @@
 export const site = {
   name: "Badlands TMS",
   logo: "/images/logo.png",
-  phone: "(555) 000-0000",
-  phoneHref: "tel:+15550000000",
+  phone: "(458) 763-0839",
+  phoneHref: "tel:+14587630839",
   address: "2239 Northeast Doctors Drive, Suite 110, Bend, OR 97701",
   addressLines: [
     "2239 Northeast Doctors Drive, Suite 110",
@@ -23,5 +23,19 @@ export const site = {
   brainswayVideoTitle: "Badlands TMS Provides BrainsWay Deep TMS Technology",
   social: {
     facebook: "https://www.facebook.com/badlandstms",
+  },
+  /** Landing-page conversion destinations */
+  routes: {
+    bookConsult: "/book-consult",
+    thankYouConsult: "/thank-you/consult",
+    inquiry: "/#contact",
+  },
+  /**
+   * GHL embeds — paste calendar/form snippets when provided.
+   * Calendar: "Book a Free 10 Minute Consultation"
+   */
+  ghl: {
+    calendarName: "Book a Free 10 Minute Consultation",
+    calendarEmbedHtml: "",
   },
 } as const;

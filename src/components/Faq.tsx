@@ -3,6 +3,7 @@
 import { useId, useState } from "react";
 import { Plus } from "lucide-react";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { InlineCta } from "./InlineCta";
 
 function FaqItem({
@@ -139,6 +140,9 @@ export function Faq() {
         <InlineCta
           prompt={copy.faq.inlineCta.prompt}
           cta={copy.faq.inlineCta.cta}
+          href={site.routes.bookConsult}
+          secondaryCta={copy.ctas.call}
+          secondaryHref={site.phoneHref}
         />
       </div>
     </section>

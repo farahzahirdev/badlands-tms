@@ -8,6 +8,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { copy } from "@/content/copy";
+import { site } from "@/content/site";
 import { Button } from "./Button";
 
 const benefitIcons: LucideIcon[] = [
@@ -52,8 +53,11 @@ export function Benefits() {
         <p className="text-small mx-auto mt-8 max-w-2xl text-center text-bl-slate/80">
           {copy.benefits.note}
         </p>
-        <div className="mt-8 text-center">
-          <Button href="#contact">{copy.benefits.cta}</Button>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Button href={site.routes.bookConsult}>{copy.benefits.cta}</Button>
+          <Button href={site.routes.inquiry} variant="secondary">
+            {copy.ctas.findOutQualify}
+          </Button>
         </div>
       </div>
     </section>

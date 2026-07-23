@@ -7,11 +7,11 @@ import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 
 const navLinks = [
-  { href: "#approach", label: copy.header.nav.approach },
-  { href: "#tms", label: copy.header.nav.tms },
-  { href: "#doctor", label: copy.header.nav.doctor },
-  { href: "#benefits", label: copy.header.nav.benefits },
-  { href: "#faq", label: copy.header.nav.faq },
+  { href: "/#approach", label: copy.header.nav.approach },
+  { href: "/#tms", label: copy.header.nav.tms },
+  { href: "/#doctor", label: copy.header.nav.doctor },
+  { href: "/#benefits", label: copy.header.nav.benefits },
+  { href: "/#faq", label: copy.header.nav.faq },
 ];
 
 export function Header() {
@@ -50,7 +50,7 @@ export function Header() {
           aria-label="Main"
         >
           <a
-            href="#"
+            href="/"
             className={`relative z-10 flex shrink-0 items-center rounded-full transition ${
               scrolled
                 ? "bg-transparent px-0 py-0 shadow-none"
@@ -81,7 +81,7 @@ export function Header() {
               ))}
             </div>
             <a
-              href="#contact"
+              href={site.routes.bookConsult}
               className="inline-flex items-center rounded-full bg-bl-sage px-4 py-2 text-sm font-semibold text-white transition hover:bg-bl-sage-dark"
             >
               {copy.header.inquiryCta}
@@ -91,7 +91,7 @@ export function Header() {
               className="inline-flex items-center gap-2 rounded-full border border-[rgba(39,42,43,0.12)] bg-transparent py-1.5 pl-3.5 pr-1.5 text-sm font-semibold text-bl-charcoal transition hover:bg-bl-sage-light"
               aria-label={`Call ${site.phone}`}
             >
-              <span className="hidden xl:inline">Call</span>
+              <span className="hidden xl:inline">{copy.ctas.call}</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-bl-sage text-white">
                 <Phone className="h-3.5 w-3.5" aria-hidden />
               </span>
@@ -129,7 +129,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={site.routes.bookConsult}
               onClick={close}
               className="mt-1 inline-flex items-center justify-center rounded-full bg-bl-sage px-5 py-3 text-sm font-semibold text-white"
             >
@@ -141,7 +141,7 @@ export function Header() {
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-bl-charcoal/15 px-5 py-3 text-sm font-semibold text-bl-charcoal"
             >
               <Phone className="h-4 w-4" aria-hidden />
-              Call {site.phone}
+              {copy.ctas.call} {site.phone}
             </a>
           </div>
         )}

@@ -4,12 +4,13 @@ import { copy } from "@/content/copy";
 import { site } from "@/content/site";
 
 const quickLinks = [
-  { href: "#approach", label: copy.header.nav.approach },
-  { href: "#tms", label: copy.header.nav.tms },
-  { href: "#doctor", label: copy.header.nav.doctor },
-  { href: "#benefits", label: copy.header.nav.benefits },
-  { href: "#faq", label: copy.header.nav.faq },
-  { href: "#contact", label: "Contact" },
+  { href: "/#approach", label: copy.header.nav.approach },
+  { href: "/#tms", label: copy.header.nav.tms },
+  { href: "/#doctor", label: copy.header.nav.doctor },
+  { href: "/#benefits", label: copy.header.nav.benefits },
+  { href: "/#faq", label: copy.header.nav.faq },
+  { href: site.routes.bookConsult, label: copy.ctas.bookConsult },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Footer() {
@@ -30,9 +31,18 @@ export function Footer() {
             <p className="text-small mx-auto mt-4 max-w-xs leading-relaxed sm:mx-0">
               {copy.footer.tagline}
             </p>
-            <a href="#contact" className="btn-primary mt-6 inline-flex">
-              {copy.header.inquiryCta}
-            </a>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+              <a href={site.routes.bookConsult} className="btn-primary inline-flex">
+                {copy.header.inquiryCta}
+              </a>
+              <a
+                href={site.phoneHref}
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <Phone className="h-4 w-4" aria-hidden />
+                {site.phone}
+              </a>
+            </div>
             <div className="mt-5 flex items-center justify-center gap-3 sm:justify-start">
               <a
                 href={site.social.facebook}
@@ -50,11 +60,16 @@ export function Footer() {
             <div className="pl-1 text-left sm:pl-0">
               <h3 className="section-eyebrow mb-4">{copy.footer.contactHeading}</h3>
               <ul className="space-y-3.5">
-                <li className="flex items-start gap-2.5 text-sm text-bl-charcoal/85 sm:gap-3">
-                  <span className="bl-icon-badge shrink-0 p-2 sm:p-2.5">
-                    <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
-                  </span>
-                  <span className="pt-1.5 leading-snug sm:pt-1.5">{site.phone}</span>
+                <li>
+                  <a
+                    href={site.phoneHref}
+                    className="group inline-flex items-start gap-2.5 text-sm font-medium text-bl-charcoal transition hover:text-bl-sage-deep sm:gap-3"
+                  >
+                    <span className="bl-icon-badge shrink-0 p-2 sm:p-2.5">
+                      <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
+                    </span>
+                    <span className="pt-1.5 leading-snug sm:pt-1.5">{site.phone}</span>
+                  </a>
                 </li>
                 <li>
                   <a
